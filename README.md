@@ -8,6 +8,7 @@
 - Чистый CSS (css-modules опционально)
 Данные для отображения:
 
+```
 const comments = [
    {
        "author": "Nikolay",
@@ -37,4 +38,5 @@ const comments = [
        "comments": []
    }
 ]
+```
 
