@@ -1,0 +1,72 @@
+.commentList {
+    position: relative;
+}
+
+.comment > .commentList {
+    margin-left: 40px;
+}
+
+.comment > .commentList:before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 30px;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    border-left: dashed 1px #e7e7e8;
+    border-bottom: dashed 1px #e7e7e8;
+    border-bottom-left-radius: 5px;
+}
+
+.info {
+    position: relative;
+    padding: 20px 40px 20px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    min-width: 300px;
+    background-color: #fbfbfb;
+    transition: 0.3s all;
+}
+
+.info:hover {
+    background-color: #efeaea;
+}
+
+.infoActive {
+    background-color: #f4f4f4;
+    box-shadow: 1px 0 10px #e7e7e8;
+}
+
+.infoActive:after {
+    content: '✓';
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    color: #68d436;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.userPhoto {
+    display: block;
+    margin-right: 10px;
+    width: 20px;
+    height: auto;
+}
+
+.userName {
+    font-size: 14px;
+    color: #454d51;
+}
+
+.userMessage {
+    margin-top: 10px;
+    font-weight: 500;
+}

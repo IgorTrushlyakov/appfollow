@@ -1,0 +1,66 @@
+.page {
+    padding: 30px;
+}
+
+.title {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: baseline;
+}
+
+.titleName {
+    margin-left: 15px;
+    font-size: 20px;
+    color: #586980;
+}
+
+.clearBtn {
+    margin-left: 10px;
+    font-size: 16px;
+    color: #586980;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s opacity;
+}
+
+.clearBtn:hover {
+    opacity: 1;
+}
+
+.row {
+    display: flex;
+}
+
+.nav {
+    padding: 15px 0;
+    width: 100%;
+    max-width: 200px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+}
+
+.menuItem {
+    padding: 15px 25px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.menuItem:hover {
+    background-color: #efeaea;
+}
+
+.menuItemActive {
+    font-weight: bold;
+    color: #5f5f5f;
+    background-color: #e8e8e8;
+}
+
+.noUser {
+    padding: 5px 25px;
+}
+
+.content {
+    padding: 0 20px;
+    border-right: 2px solid #f7f7f7;
+}
