@@ -1,11 +1,14 @@
-import React, { FC } from 'react';
+import React, { FC, useContext } from 'react';
 import classnames from 'classnames';
 import { IComment } from '../../types/Commets';
+import { CommentContext } from '../../App';
 import user from '../../icon/user.svg';
 
 import styles from './Comments.module.css';
 
-const Comments: FC<{ comments: any, selectedUser: string }> = ({comments, selectedUser}) => {
+const Comments: FC<{ comments: any }> = ({ comments }) => {
+  const selectedUser = useContext(CommentContext);
+
   return (
     <ul className={styles.commentList}>
       {
@@ -28,14 +31,14 @@ const Comments: FC<{ comments: any, selectedUser: string }> = ({comments, select
 
             {
               Boolean(comment.comments.length) && (
-                <Comments comments={comment.comments} selectedUser={selectedUser}/>
+                <Comments comments={comment.comments} />
               )
             }
           </li>
         ))
       }
     </ul>
-  )
+  );
 }
 
-export { Comments };
+export default Comments;
